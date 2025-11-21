@@ -1,7 +1,16 @@
+import Link from "next/link";
 import React from "react";
 
 const Header: React.FC = () => {
-	return <div>Header</div>;
+	return (
+		<nav>
+			<h2>My Page</h2>
+			<div>
+				<Link href="/about">About</Link>
+				<Link href="/home">Home</Link>
+			</div>
+		</nav>
+	);
 };
 
 export default Header;
