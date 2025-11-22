@@ -8,7 +8,7 @@ export interface ModalProps {
 	addCard: (newCard: { title: string; content: string }) => void;
 }
 
-export interface ButtonProps{
-    size: string;
-    shape: string;
+export interface ButtonProps {
+	size: "small" | "medium" | "large";
+	shape: "rounded-sm" | "rounded-md" | "rounded-full";
 }

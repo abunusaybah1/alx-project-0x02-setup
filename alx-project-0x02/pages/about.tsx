@@ -5,9 +5,9 @@ const About: React.FC = () => {
 	return (
 		<div>
 			<h2>About Page</h2>
-			<Button size="text-sm" shape="rounded-sm" />
-			<Button size="text-md" shape="rounded-md" />
-			<Button size="text-lg" shape="rounded-full" />
+			<Button size="small" shape="rounded-sm" />
+			<Button size="medium" shape="rounded-md" />
+			<Button size="large" shape="rounded-full" />
 		</div>
 	);
 };
