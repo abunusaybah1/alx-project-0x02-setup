@@ -1,11 +1,11 @@
 export interface CardProps {
 	title: string;
-	body: string;
+	content: string;
 }
 
 export interface ModalProps {
 	handleModal: () => void;
-	addCard: (newCard: { title: string; body: string }) => void;
+	addCard: (newCard: { title: string; content: string }) => void;
 }
 
 export interface ButtonProps {
@@ -15,10 +15,21 @@ export interface ButtonProps {
 
 export interface PostProps {
 	title: string;
-	content: string;
+	body: string;
 	userId: number;
 }
 
 export interface PostPageProps {
 	posts: PostProps[];
+}
+
+export interface UserProps {
+	id: number;
+	name: string;
+	email: string;
+	username: string;
+}
+
+export interface UserPageProps {
+	users: UserProps[];
 }

@@ -1,6 +1,6 @@
 import PostCard from "@/components/common/PostCard";
 import Header from "@/components/layout/Header";
-import { PostPageProps, PostProps } from "@/interfaces";
+import { PostPageProps } from "@/interfaces";
 import React from "react";
 
 const Posts: React.FC<PostPageProps> = ({ posts }) => {
@@ -9,7 +9,12 @@ const Posts: React.FC<PostPageProps> = ({ posts }) => {
 			<Header />
 			<h2>Posts</h2>
 			{posts.map((post, key) => (
-				<PostCard key={key} userId={post.userId} title={post.title} content={post.body} />
+				<PostCard
+					key={key}
+					userId={post.userId}
+					title={post.title}
+					body={post.body}
+				/>
 			))}
 		</div>
 	);
