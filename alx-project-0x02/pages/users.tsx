@@ -12,8 +12,9 @@ const Users: React.FC<UserPageProps> = ({ users }) => {
 					key={user.id}
 					id={user.id}
 					name={user.name}
-					email={user.name}
+					email={user.email}
 					username={user.username}
+					address={user.address.street}
 				/>
 			))}
 		</div>
@@ -22,7 +23,8 @@ const Users: React.FC<UserPageProps> = ({ users }) => {
 
 export async function getStaticProps() {
 	const res = await fetch("https://jsonplaceholder.typicode.com/Users");
-	const users = res.json();
+	const users = await res.json();
+
 	return {
 		props: {
 			users,
