@@ -14,7 +14,7 @@ const UserCard: React.FC<UserProps> = ({
 			<h2>Name: {name}</h2>
 			<h3>Username: {username}</h3>
 			<h4>Email: {email}</h4>
-			<p>Address: {address}</p>
+			<p>Address: {address.street}</p>
 		</div>
 	);
 };

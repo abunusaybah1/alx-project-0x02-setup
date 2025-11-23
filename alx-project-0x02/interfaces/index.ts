@@ -28,7 +28,7 @@ export interface UserProps {
 	name: string;
 	email: string;
 	username: string;
-	address: { street: string };
+	address: { street: string; }
 }
 
 export interface UserPageProps {

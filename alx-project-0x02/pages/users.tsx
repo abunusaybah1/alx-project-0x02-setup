@@ -14,7 +14,7 @@ const Users: React.FC<UserPageProps> = ({ users }) => {
 					name={user.name}
 					email={user.email}
 					username={user.username}
-					address={user.address.street}
+					address={user.address}
 				/>
 			))}
 		</div>
